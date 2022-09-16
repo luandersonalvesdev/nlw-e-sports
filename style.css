@@ -9,7 +9,7 @@ ul{
 }
 
 body{
-    background-image: url(./fundo.jpg);
+    background-image: url(./assets/fundo.jpg);
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
@@ -136,7 +136,7 @@ header div{
 }
 
 main section{
-    animation: toRight 1s backwards;
+    animation: toBottom 1s backwards;
 }
 
 main section:nth-child(1){
@@ -160,5 +160,17 @@ main section:nth-child(3){
     to{
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes toBottom{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
